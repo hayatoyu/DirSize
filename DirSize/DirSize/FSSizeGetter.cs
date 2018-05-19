@@ -11,7 +11,7 @@ namespace DirSize
     {
         enum SizeUnit
         {
-            Bytes,KB,MB,GB,TB,PB,EB,ZB,YB
+            Bytes, KB, MB, GB, TB, PB, EB, ZB, YB
         }
 
         public long getDirSize(string path)
@@ -59,7 +59,7 @@ namespace DirSize
             int count = 0;
 
             formatSize = size;
-            while(formatSize > 1024 && count < 9)
+            while (formatSize > 1024 && count < 8)
             {
                 formatSize /= 1024;
                 count++;

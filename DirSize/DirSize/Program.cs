@@ -18,15 +18,15 @@ namespace DirSize
             Console.WriteLine(watch.ElapsedMilliseconds + " ms spent.\n");
 
             watch.Restart();
-            Console.WriteLine("DirSize : " + getter.formatSize(getter.getDirSizeByLinq(@"D:\01lin")));
+            Console.WriteLine("getDirSizeByLinq : " + getter.formatSize(getter.getDirSizeByLinq(@"D:\01lin")));
             Console.WriteLine(watch.ElapsedMilliseconds + " ms spent.\n");
 
             watch.Restart();
-            Console.WriteLine("DirSize : " + getter.formatSize(getter.getDirSizeByScripting(@"D:\01lin")));
+            Console.WriteLine("getDirSizeByScripting : " + getter.formatSize(getter.getDirSizeByScripting(@"D:\01lin")));
             Console.WriteLine(watch.ElapsedMilliseconds + " ms spent.\n");
 
             watch.Restart();
-            Console.WriteLine("DirSize : " + getter.formatSize(getter.getDirSizeByReflection(@"D:\01lin")));
+            Console.WriteLine("getDirSizeByReflection : " + getter.formatSize(getter.getDirSizeByReflection(@"D:\01lin")));
             Console.WriteLine(watch.ElapsedMilliseconds + " ms spent.\n");
 
             watch.Stop();
